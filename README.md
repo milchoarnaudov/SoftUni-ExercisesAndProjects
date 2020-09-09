@@ -1,1 +1,1 @@
-# SoftUni-ExercisesAndProjects
+# SoftUni Courses
