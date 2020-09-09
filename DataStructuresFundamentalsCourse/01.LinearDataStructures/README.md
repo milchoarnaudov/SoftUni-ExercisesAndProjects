@@ -1,0 +1,1 @@
+# Implementing List, Stack and Queues (with a Node<T> class), Singly Linked List, Reversed List and Doubly Linked List.
