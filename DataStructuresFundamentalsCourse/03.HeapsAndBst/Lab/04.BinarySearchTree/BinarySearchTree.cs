@@ -128,7 +128,7 @@
             return element.CompareTo(value) == 0;
         }
 		
-		private void Copy(Node<T> root)
+	private void Copy(Node<T> root)
         {
             if (root != null)
             {
