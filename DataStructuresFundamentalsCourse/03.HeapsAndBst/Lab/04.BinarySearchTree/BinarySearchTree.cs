@@ -14,16 +14,6 @@
             this.Copy(root);
         }
 
-        private void Copy(Node<T> root)
-        {
-            if (root != null)
-            {
-                this.Insert(root.Value);
-                this.Copy(root.LeftChild);
-                this.Copy(root.RightChild);
-            }
-        }
-
         public Node<T> Root { get; private set; }
 
         public Node<T> LeftChild { get; private set; }
@@ -136,6 +126,16 @@
         private bool AreEqual(T element, T value)
         {
             return element.CompareTo(value) == 0;
+        }
+		
+		private void Copy(Node<T> root)
+        {
+            if (root != null)
+            {
+                this.Insert(root.Value);
+                this.Copy(root.LeftChild);
+                this.Copy(root.RightChild);
+            }
         }
     }
 }
