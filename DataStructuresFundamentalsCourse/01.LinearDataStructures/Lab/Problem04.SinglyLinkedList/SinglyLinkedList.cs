@@ -8,12 +8,6 @@
     {
         private Node<T> _head;
 
-        public SinglyLinkedList()
-        {
-            this._head = null;
-            this.Count = 0;
-        }
-
         public int Count { get; private set; }
 
         public void AddFirst(T item)

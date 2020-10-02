@@ -7,13 +7,6 @@
     public class Stack<T> : IAbstractStack<T>
     {
         private Node<T> _top;
-
-        public Stack()
-        {
-            this._top = null;
-            this.Count = 0;
-        }
-
         public int Count { get; private set; }
 
         public bool Contains(T item)

@@ -10,10 +10,5 @@
 
         public T Value { get; set; }
         public Node<T> Next { get; set; }
-
-        public void Add(Node<T> nextElement)
-        {
-            this.Next = nextElement;
-        }
     }
 }

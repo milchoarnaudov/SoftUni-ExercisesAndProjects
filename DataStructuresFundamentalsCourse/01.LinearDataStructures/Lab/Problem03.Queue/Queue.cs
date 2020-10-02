@@ -8,12 +8,6 @@
     {
         private Node<T> _head;
 
-        public Queue()
-        {
-            this._head = null;
-            this.Count = 0;
-        }
-
         public int Count { get; private set; }
 
         public bool Contains(T item)
@@ -46,11 +40,11 @@
             return currElement.Value;
         }
 
-        
+
 
         public void Enqueue(T item)
         {
-            if(this._head == null)
+            if (this._head == null)
             {
                 this._head = new Node<T>(item);
             }
@@ -92,7 +86,7 @@
 
         private void EnsureNotEmpty()
         {
-            if(this.Count == 0)
+            if (this.Count == 0)
             {
                 throw new InvalidOperationException("The Queue is empty.");
             }

@@ -3,7 +3,7 @@
     using System;
     public class Node<T>
     {
-        public Node(T value, Node<T> nextElement)
+        public Node(T value, Node<T> nextElement = null)
         {
             this.Value = value;
             this.Next = nextElement;
