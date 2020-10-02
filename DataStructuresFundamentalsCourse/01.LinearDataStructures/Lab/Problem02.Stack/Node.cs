@@ -5,8 +5,8 @@
     {
         public Node(T value, Node<T> nextElement)
         {
-            Value = value;
-            Next = nextElement;
+            this.Value = value;
+            this.Next = nextElement;
         }
 
         public T Value { get; set; }
