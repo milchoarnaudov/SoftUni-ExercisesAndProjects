@@ -3,6 +3,7 @@ namespace Sandbox
 {
     using SUS.HTTP;
     using System;
+    using System.Diagnostics;
     using System.IO;
     using System.Text;
     using System.Threading.Tasks;
@@ -11,14 +12,15 @@ namespace Sandbox
     {
         static async Task Main(string[] args)
         {
-            IHttpServer server = new HttpServer();
+            //    IHttpServer server = new HttpServer();
 
-            server.AddRoute("/", HomePage);
-            server.AddRoute("/favicon.ico", Favicon);
-            server.AddRoute("/about", About);
-            server.AddRoute("/users/login", Login);
+            //    server.AddRoute("/", HomePage);
+            //    server.AddRoute("/favicon.ico", Favicon);
+            //    server.AddRoute("/about", About);
+            //    server.AddRoute("/users/login", Login);
 
-            await server.StartAsync(80);
+            //    Process.Start(@"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe", "http://localhost:");
+            //    await server.StartAsync(80);
         }
 
         private static HttpResponse Favicon(HttpRequest arg)
@@ -56,7 +58,7 @@ namespace Sandbox
             var response = new HttpResponse("text/html", httpBodyResponseAsBytes);
             response.Cookies.Add(new ResponseCookie("test-cookie", "about"));
             response.Cookies.Add(new ResponseCookie("sid", Guid.NewGuid().ToString()) { HttpOnly = true, MaxAge = 60 * 24 * 60 * 60 });
-            return response; throw new NotImplementedException();
+            return response;
         }
     }
 }
