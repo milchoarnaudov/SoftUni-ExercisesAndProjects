@@ -1,25 +1,22 @@
 ﻿using SUS.HTTP;
 using SUS.MvcFramework;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
 
-namespace MvcApp.Controllers
+namespace BattleCards.Controllers
 {
     public class UsersController : Controller
     {
-        public HttpResponse Login(HttpRequest request)
+        public HttpResponse Login()
         {
             return this.View();
         }
 
-        public HttpResponse Register(HttpRequest request)
+        public HttpResponse Register()
         {
             return this.View();
         }
 
-        public HttpResponse DoLogin(HttpRequest arg)
+        [HttpPost]
+        public HttpResponse DoLogin()
         {
             return this.Redirect("/");
         }
