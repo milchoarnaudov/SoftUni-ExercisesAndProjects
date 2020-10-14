@@ -1,0 +1,1 @@
+## Creating this project completely from scratch (blank solution) - This project will be a simple web application which will be using a custom framework similar to ASP.NET Core which we are developing
