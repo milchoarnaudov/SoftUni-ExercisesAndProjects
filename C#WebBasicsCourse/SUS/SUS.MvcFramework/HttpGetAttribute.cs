@@ -6,7 +6,6 @@ namespace SUS.MvcFramework
     {
         public HttpGetAttribute()
         {
-
         }
 
         public HttpGetAttribute(string url)

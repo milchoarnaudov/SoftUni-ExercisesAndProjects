@@ -14,7 +14,9 @@ namespace SUS.HTTP
         }
 
         public string Path { get; set; }
+
         public HttpMethod Method { get; set; }
+
         public Func<HttpRequest, HttpResponse> Action { get; set; }
     }
 }
