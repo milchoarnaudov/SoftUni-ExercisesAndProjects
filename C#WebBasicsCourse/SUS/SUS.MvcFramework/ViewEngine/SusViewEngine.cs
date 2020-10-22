@@ -11,7 +11,6 @@ using System.Text.RegularExpressions;
 
 namespace SUS.MvcFramework.ViewEngine
 {
-    // RAZOR VIEW ENGINE
     public class SusViewEngine : IViewEngine
     {
         public string GetHtml(string templateCode, object viewModel, string user)

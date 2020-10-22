@@ -20,7 +20,7 @@ namespace BattleCards.Data
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=BattleCards2;Integrated Security=true;");
+                optionsBuilder.UseSqlServer("Server=.;Database=BattleCards;Integrated Security=true;");
             }
         }
 

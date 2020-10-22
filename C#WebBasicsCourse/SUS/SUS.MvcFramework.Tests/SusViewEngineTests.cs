@@ -9,10 +9,6 @@ namespace SUS.MvcFramework.Tests
     public class SusViewEngineTests
     {
         [Theory]
-        // happy path
-        // interesting cases
-        // complex cases or combination of tests
-        // code coverage 100%
         [InlineData("CleanHtml")]
         [InlineData("Foreach")]
         [InlineData("IfElseFor")]

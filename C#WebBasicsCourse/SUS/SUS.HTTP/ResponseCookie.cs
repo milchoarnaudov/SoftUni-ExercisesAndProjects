@@ -18,7 +18,6 @@ namespace SUS.HTTP
 
         public string Path { get; set; }
 
-        // Set-Cookie: SSID=Ap4P…GTEq; Domain=foo.com; Path=/; Max-Age=2; Expires=Wed, 13 Jan 2021 22:23:01 GMT; Secure; HttpOnly
         public override string ToString()
         {
             StringBuilder cookieBuilder = new StringBuilder();
@@ -35,7 +34,5 @@ namespace SUS.HTTP
 
             return cookieBuilder.ToString();
         }
-
-        // Domain, Secure
     }
 }

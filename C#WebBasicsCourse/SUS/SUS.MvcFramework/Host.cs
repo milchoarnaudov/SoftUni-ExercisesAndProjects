@@ -23,12 +23,14 @@ namespace SUS.MvcFramework
             AutoRegisterStaticFile(routeTable);
             AutoRegisterRoutes(routeTable, application, serviceCollection);
 
-            Console.WriteLine("All registered routes:");
+            Console.WriteLine("Registered routes:");
             foreach (var route in routeTable)
             {
                 Console.WriteLine($"{route.Method} {route.Path}");
             }
 
+            Console.WriteLine();
+            Console.WriteLine("Requests:");
             IHttpServer server = new HttpServer(routeTable);
 
             Process.Start(@"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe", "http://localhost/");
@@ -84,7 +86,6 @@ namespace SUS.MvcFramework
                     parameter.ParameterType != typeof(string)
                     && parameter.ParameterType != typeof(int?))
                 {
-                    // complex type
                     parameterValue = Activator.CreateInstance(parameter.ParameterType);
                     var properties = parameter.ParameterType.GetProperties();
                     foreach (var property in properties)

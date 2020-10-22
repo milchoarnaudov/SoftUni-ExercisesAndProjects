@@ -59,12 +59,6 @@ namespace SUS.HTTP
                     }
 
                     var requestAsString = Encoding.UTF8.GetString(data.ToArray());
-
-                    if (String.IsNullOrEmpty(requestAsString))
-                    {
-                        return;
-                    }
-
                     var request = new HttpRequest(requestAsString);
                     Console.WriteLine($"{request.Method} {request.Path} => {request.Headers.Count} headers");
 
@@ -78,6 +72,7 @@ namespace SUS.HTTP
                     }
                     else
                     {
+                        // Not Found 404
                         response = new HttpResponse("text/html", new byte[0], HttpStatusCode.NotFound);
                     }
 
