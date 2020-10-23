@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SUS.MvcFramework.Tests", "S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BattleCards", "Apps\BattleCards\BattleCards.csproj", "{6204167A-64AF-4AED-A891-F178B981DD6C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SULS", "SULS\SULS.csproj", "{B6D20731-17C5-4E03-A4A1-A8376945DD5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SULS", "Apps\SULS\SULS.csproj", "{375C8E62-66FE-45FF-BE6B-D4F4FD5A9159}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,17 +37,17 @@ Global
 		{6204167A-64AF-4AED-A891-F178B981DD6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6204167A-64AF-4AED-A891-F178B981DD6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6204167A-64AF-4AED-A891-F178B981DD6C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B6D20731-17C5-4E03-A4A1-A8376945DD5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B6D20731-17C5-4E03-A4A1-A8376945DD5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B6D20731-17C5-4E03-A4A1-A8376945DD5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B6D20731-17C5-4E03-A4A1-A8376945DD5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{375C8E62-66FE-45FF-BE6B-D4F4FD5A9159}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{375C8E62-66FE-45FF-BE6B-D4F4FD5A9159}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{375C8E62-66FE-45FF-BE6B-D4F4FD5A9159}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{375C8E62-66FE-45FF-BE6B-D4F4FD5A9159}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{6204167A-64AF-4AED-A891-F178B981DD6C} = {D058481A-B479-499D-ADB8-9108A526A334}
-		{B6D20731-17C5-4E03-A4A1-A8376945DD5F} = {D058481A-B479-499D-ADB8-9108A526A334}
+		{375C8E62-66FE-45FF-BE6B-D4F4FD5A9159} = {D058481A-B479-499D-ADB8-9108A526A334}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1DE8A1FE-A195-4206-8DF0-E23F1C7707C8}
