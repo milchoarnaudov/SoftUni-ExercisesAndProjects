@@ -46,7 +46,7 @@ namespace SharedTrip.Services
             return availableSeats > 0;
         }
 
-        public void Create(TripInputViewModel tripvm)
+        public void Create(TripInputModel tripvm)
         {
             var trip = new Trip
             {

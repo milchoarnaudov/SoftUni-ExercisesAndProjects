@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SULS.ViewModels.Users
+namespace SharedTrip.ViewModels.Users
 {
-    public class RegisterInputViewModel
+    public class RegisterInputModel
     {
         public string Username { get; set; }
 

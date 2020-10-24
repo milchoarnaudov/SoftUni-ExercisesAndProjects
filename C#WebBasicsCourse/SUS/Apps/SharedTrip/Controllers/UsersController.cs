@@ -56,7 +56,7 @@ namespace SharedTrip.Controllers
         }
 
         [HttpPost]
-        public HttpResponse Register(RegisterInputViewModel input)
+        public HttpResponse Register(RegisterInputModel input)
         {
             if (this.IsUserSignedIn())
             {

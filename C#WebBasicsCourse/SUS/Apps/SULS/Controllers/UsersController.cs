@@ -60,7 +60,7 @@ namespace SULS.Controllers
         }
 
         [HttpPost]
-        public HttpResponse Register(RegisterInputViewModel input)
+        public HttpResponse Register(RegisterInputModel input)
         {
             if (input.Password != input.ConfirmPassword)
             {

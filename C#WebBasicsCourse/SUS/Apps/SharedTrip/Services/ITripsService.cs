@@ -9,7 +9,7 @@ namespace SharedTrip.Services
     {
         ICollection<TripViewModel> GetAll();
 
-        void Create(TripInputViewModel trip);
+        void Create(TripInputModel trip);
 
         bool AreThereAvailableSeats(string tripId);
         TripDetailsViewModel GetTripDetailsById(string tripId);

@@ -27,7 +27,7 @@ namespace SharedTrip.Controllers
         }
 
         [HttpPost]
-        public HttpResponse Add(TripInputViewModel input)
+        public HttpResponse Add(TripInputModel input)
         {
             if (!this.IsUserSignedIn())
             {
