@@ -375,7 +375,7 @@
             temp.Right = node;
             temp.Color = node.Color;
             node.Color = Red;
-            node.Count = 1 + Count(node.Left) + Count(node.Left);
+            node.Count = 1 + Count(node.Left) + Count(node.Right);
 
             return temp;
         }
