@@ -24,5 +24,17 @@
         public DateTime IssueDate { get; set; }
 
         public DateTime DueDate { get; set; }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+
+        public override bool Equals(object obj)
+        {
+            var result = this.SerialNumber.CompareTo((obj as Invoice).SerialNumber);
+
+            return result == 0;
+        }
     }
 }
