@@ -4,7 +4,7 @@
     using System.Collections.Generic;
     using System.Linq;
 
-    public class Solutions
+    public class ShortExercises
     {
         // Recursive Array Sum
         public void RecursiveArraysSumStart()
@@ -61,7 +61,7 @@
             Console.WriteLine(result);
         }
 
-        private int RecursiveFactorial(int n)
+        private long RecursiveFactorial(int n)
         {
             if (n == 0)
             {
@@ -72,18 +72,18 @@
         }
 
         // Recursive Fibonacci
-        public void RecursiveFibonacciStart()
+        public void CalculateFibonacci()
         {
             var input = int.Parse(Console.ReadLine());
 
-            var result = this.RecursiveFibonacci(input);
+            var result = this.IterativeFibonnaci(input);
 
             Console.WriteLine(result);
         }
 
         private int RecursiveFibonacci(int n)
         {
-            if (n <= 1)
+            if (n <= 2)
             {
                 return 1;
             }
@@ -91,16 +91,16 @@
             return RecursiveFibonacci(n - 1) + RecursiveFibonacci(n - 2);
         }
 
-        private int IterativeFibonnaci(int n)
+        private long IterativeFibonnaci(int n)
         {
-            int a = 1;
-            int b = 1;
+            long a = 0;
+            long b = 1;
 
             for (int i = 0; i < n; i++)
             {
-                int temp = b;
-                b = a + b;
-                a = temp;
+                long temp = a;
+                a = b;
+                b = temp + a;
             }
 
             return a;

@@ -4,10 +4,11 @@
     using System.Collections.Generic;
     using System.Linq;
 
-    public class Program
+    class Program
     {
         static void Main(string[] args)
         {
+            new LongestCommonSubset().Find();
         }
     }
 }
